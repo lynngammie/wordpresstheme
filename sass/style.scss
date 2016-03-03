@@ -18,7 +18,7 @@ Default Styling
 ====================================
 */
 
-$blue: #00284d;
+$blue: #19242A;
 $darkgrey: #303030;
 $lightgrey: #D3D3D3;
 $white: #FFF;
@@ -68,7 +68,7 @@ div.menus {
 	list-style-type:none;
 	padding:0;
 	position:relative;
-	bottom:140px;
+	bottom:40px;
 	color:$blue;
 	// margin:0 50px;
 	li {
@@ -112,6 +112,27 @@ header {
 	h1, h2 {
 		margin:0 0 10px 0;
 		text-transform: uppercase;
+	}
+}
+
+//Gallery Styling
+
+.cover-gallery {
+	padding:50px;
+	background:$blue;
+}
+
+.cover {
+	float:left;
+	width:33.3%;
+	img {
+		width:50%;
+		float:left;
+		padding-right:15px;
+	}
+	p {
+		color:$white;
+		font-size:0.9rem;
 	}
 }
 

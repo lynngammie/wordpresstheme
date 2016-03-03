@@ -19,8 +19,8 @@
   <div class="container">
     <nav>
       <div class="logo">
-      <img src=" <?php site_icon_url(); ?>" alt="">
         <!-- <img src="images/book.png" alt=""> -->
+        <img src=" <?php the_field('header_icon'); ?>" alt="">
         <h1>
           <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
             <?php bloginfo( 'name' ); ?>
@@ -41,4 +41,6 @@
     </nav>
   </div> <!-- /.container -->
 </header><!--/.header-->
+
+<!-- Icon created by Leadway Global LLC for the Noun Project -->
 
