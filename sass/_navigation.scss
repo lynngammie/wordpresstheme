@@ -1,3 +1,11 @@
+$blue: #00284d;
+$darkgrey: #303030;
+$lightgrey: #D3D3D3;
+$white: #FFF;
+$black: #000;
+$basefont: 'Josefin Sans', sans-serif;
+$secondfont: 'Cutive Mono', sans-serif;
+
 ul.menu {
 	margin: 0;
 	padding: 0;
@@ -8,7 +16,7 @@ ul.menu {
 			color: #333;
 			padding: 10px;
 			background: #333;
-			color: white;
+			color: $blue;
 		}
 	}
 }
