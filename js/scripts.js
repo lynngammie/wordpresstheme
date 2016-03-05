@@ -15,4 +15,12 @@ $(function(){
 		}
 	});
 
+	$(".cover-gallery").flickity({
+			wrapAround:true,
+			pageDots: false,
+			imagesLoaded: true
+			// autoPlay:2000
+		});
+	console.log('working');
+
 });

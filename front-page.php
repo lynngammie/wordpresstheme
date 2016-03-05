@@ -7,7 +7,7 @@
     <!-- Add the custom fields of book cover and book excerpt to the page -->
     </div> <!-- /.container -->
 
-    <div class="cover-gallery clearfix js-flickity" id="cover-gallery">
+    <div class="cover-gallery clearfix" id="cover-gallery">
       <div class="cover clearfix">
         <img src="<?php the_field('book_cover'); ?>" alt="cookbook cover"/>
         <p><?php the_field('book_excerpt'); ?></p>
@@ -30,7 +30,7 @@
       </div>
       <div class="cover clearfix">
         <img src="<?php the_field('book_cover_6'); ?>" alt="cookbook cover"/>
-        <p><?php the_field('book_excerpt_6'); ?></p>
+        <p>Not sure what is going on here so hard coding for now. Will fix when I am a pro at custom fields.</p>
       </div>
     </div>
 

@@ -50,8 +50,6 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	wp_enqueue_style('flickity', 'https://npmcdn.com/flickity@1.1/dist/flickity.min.css');
-
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono:400,400italic,300italic,300|Josefin+Sans:400,700,400italic');
 }
 
@@ -72,15 +70,14 @@ function hackeryou_scripts() {
   	true //load in footer
   );
 
-  wp_deregister_script('flickity');
   wp_enqueue_script(
-  	'jquery',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js",
-  	false, //dependencies
-  	null, //version number
-  	true //load in footer
-  );
-  
+      'flickity', //handle
+      get_template_directory_uri() . '/js/flickity.pkgd.min.js', //source
+      false, //dependencies
+      null, // version number
+      true //load in footer
+    );
+
   wp_deregister_script('jqueryui');
   wp_enqueue_script(
   	'jqueryui',
