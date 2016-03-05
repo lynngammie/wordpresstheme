@@ -8,7 +8,6 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
-  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono:400,400italic,300italic,300|Josefin+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -17,22 +16,24 @@
 
 <header>
   <div class="container">
-    <nav>
-      <div class="logo">
-        <!-- <img src="images/book.png" alt=""> -->
-        <img src=" <?php the_field('header_icon'); ?>" alt="">
-        <h1>
-          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-            <?php bloginfo( 'name' ); ?>
-          </a>
-          <h2><?php bloginfo('description'); ?></h2>
-        </h1>
-      </div>
+    <nav id="navbar">
       <div class="menus">
         <?php wp_nav_menu( array(
           'container' => false,
           'theme_location' => 'menu-left',
         )); ?>
+      </div>
+      <div class="logo">
+      <h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+        <h2><?php bloginfo('description'); ?></h2>
+      </h1>
+        <!-- <img src="images/book.png" alt=""> -->
+        <img src=" <?php the_field('header_icon'); ?>" alt="">
+      </div>
+      <div class="menus menu-right">
         <?php wp_nav_menu( array(
           'container' => false,
           'theme_location' => 'menu-right',

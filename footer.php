@@ -1,6 +1,12 @@
 <footer>
-  <div class="container">
-    <p>&copy; Lynn Gammie <?php echo date('Y'); ?></p>
+  <div class="footer-container">
+    <p>Custom theme &copy; Lynn Gammie <?php echo date('Y'); ?></p>
+    <div class="social">
+    	<?php wp_nav_menu( array(
+          'container' => false,
+          'theme_location' => 'menu-social',
+        )); ?>
+    </div>
   </div>
 </footer>
 
