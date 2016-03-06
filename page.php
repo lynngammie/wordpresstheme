@@ -6,7 +6,7 @@
   <?php endif; ?>
     <div style="background-image:url(<?php echo $image[0]; ?>)" class="page-content">
     </div>
-      <div class="page-container">
+      <div class="page-container start-scroll">
       <?php // Start the loop ?>
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 

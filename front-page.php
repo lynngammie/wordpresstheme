@@ -7,7 +7,7 @@
     <!-- Add the custom fields of book cover and book excerpt to the page -->
     </div> <!-- /.container -->
 
-    <div class="cover-gallery clearfix" id="cover-gallery">
+    <div class="cover-gallery start-scroll clearfix">
       <div class="cover clearfix">
         <img src="<?php the_field('book_cover'); ?>" alt="cookbook cover"/>
         <p><?php the_field('book_excerpt'); ?></p>

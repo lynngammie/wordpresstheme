@@ -1,8 +1,7 @@
 $(function(){
 
-	console.log("It's working");
 
-  var startchange = $('#cover-gallery');
+  var startchange = $('.start-scroll');
   var offset = startchange.offset();
   console.log(offset);
   $(document).scroll(function() { 
@@ -21,6 +20,5 @@ $(function(){
 			imagesLoaded: true
 			// autoPlay:2000
 		});
-	console.log('working');
 
 });
