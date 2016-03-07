@@ -9,4 +9,54 @@
 	}
 }
 
+#search-2 {
+	width:100%;
+}
+
+.searchsubmit {
+	border-radius:none;
+	margin-bottom:40px;
+}
+
+.row, h3.widget-title {
+	display:none;
+}
+
+.widget-easy-twitter-feed-widget-row, {
+	padding:5px;
+	border: 1px solid $blue;
+	margin-bottom:40px;
+}
+
+.textwidget, .widget_recent_entries {
+	font-size:1rem;
+	margin-bottom:40px;
+}
+
+.widget_recent_entries {
+	li {
+		background:$lightgrey;
+		margin:8px 0;
+		padding:8px;
+	}
+	li:nth-child(even){
+		background:#8EA1B7 ;
+	}
+}
+
+.tagcloud {
+	margin-bottom:40px;
+	a {
+		background: #8EA1B7;
+		padding:6px;
+		margin-right:6px;
+		line-height:2rem;
+	}
+}
+
+caption {
+	font-size:1rem;
+	margin-bottom:10px;
+}
+
 

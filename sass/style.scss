@@ -22,6 +22,7 @@ Default Styling
 $blue: #19242A;
 $darkgrey: #303030;
 $lightgrey: #D3D3D3;
+$lightblue: #8EA1B7;
 $white: #FFF;
 $grey: #515860;
 $black: #000;
@@ -430,7 +431,36 @@ img {
 }
 
 
+// PAGES STYLING
 
+.page-container {
+	padding:40px 0;
+	width:80%;
+	margin:0 auto;
+	// column-count:3;
+	p {
+		font-size:1rem;
+	}
+}
+
+.books-container {
+	margin:0 auto;
+	.grid-item {
+		float:left;
+		width:33%;
+		height:auto;
+		padding:10px;
+		// position:absolute;
+	}
+	p.grid-item {
+		margin:0;
+		font-size:1rem;
+	}
+}
+
+.testing {
+	display:none;
+}
 
 
 

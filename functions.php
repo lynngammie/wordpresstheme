@@ -71,6 +71,14 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+      'masonry', //handle
+      get_template_directory_uri() . '/js/masonry.pkgd.min.js', //source
+      false, //dependencies
+      null, // version number
+      true //load in footer
+    );
+
+  wp_enqueue_script(
       'flickity', //handle
       get_template_directory_uri() . '/js/flickity.pkgd.min.js', //source
       false, //dependencies
